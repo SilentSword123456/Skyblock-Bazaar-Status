@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.text.method.DigitsKeyListener;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -106,6 +107,7 @@ public class ChallengeActivity extends AppCompatActivity {
         editNumC7 = findViewById(R.id.editNumC7);
         editNumC8 = findViewById(R.id.editNumC8);
         editNumC9 = findViewById(R.id.editNumC9);
+        editNumC9.setKeyListener(DigitsKeyListener.getInstance("0123456789-"));
         editColor = findViewById(R.id.editColor);
         switchFancyTimer = findViewById(R.id.switchFancyTimer);
         switchArbitrageShortcut = findViewById(R.id.switchArbitrageShortcut);
